@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How To Control Overeating At Restaurants</title>
+<meta name="description" content="Master the art of portion control when dining out. Learn practical strategies to enjoy restaurant meals without overeating or feeling uncomfortable.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',-apple-system,sans-serif;background:#f8f4e6;color:#2d2d2d;line-height:1.6;overflow-x:hidden}
+a{color:#c17817;text-decoration:none;font-weight:600;transition:all 0.3s ease}
+a:hover{color:#a66815;text-decoration:underline}
+
+/* ORGANIC WAVY HEADER */
+.organic-hero{min-height:100vh;background:linear-gradient(135deg,#f4d03f 0%,#f39c12 30%,#e67e22 70%,#d35400 100%);position:relative;display:flex;align-items:center;overflow:hidden}
+.wave-layer{position:absolute;bottom:0;left:0;right:0;height:150px}
+.wave{position:absolute;bottom:0;left:0;width:200%;height:100%;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120'%3E%3Cpath d='M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,133.3C960,128,1056,96,1152,85.3C1248,75,1344,85,1392,90.7L1440,96L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z' fill='%23f8f4e6'/%3E%3C/svg%3E") repeat-x;animation:wave 15s ease-in-out infinite}
+.wave:nth-child(2){bottom:10px;animation:wave 18s ease-in-out infinite reverse;opacity:0.8}
+.wave:nth-child(3){bottom:20px;animation:wave 20s ease-in-out infinite;opacity:0.6}
+
+.hero-content{max-width:1200px;margin:0 auto;padding:0 2rem;position:relative;z-index:2}
+.hero-grid{display:grid;grid-template-columns:1fr 400px;gap:4rem;align-items:center}
+.hero-text{color:white}
+.hero-badge{display:inline-block;background:rgba(255,255,255,0.2);backdrop-filter:blur(10px);padding:0.7rem 1.5rem;border-radius:25px;font-size:0.85rem;font-weight:600;margin-bottom:1.5rem;border:1px solid rgba(255,255,255,0.3)}
+.hero-title{font-size:clamp(2.5rem,4vw,3.5rem);font-weight:800;line-height:1.2;margin-bottom:1.5rem;text-shadow:2px 2px 4px rgba(0,0,0,0.3)}
+.hero-subtitle{font-size:1.2rem;margin-bottom:2rem;opacity:0.95;line-height:1.7}
+
+.hero-visual{background:white;border-radius:30px;padding:2.5rem;box-shadow:0 20px 60px rgba(0,0,0,0.15);transform:rotate(-2deg);transition:transform 0.3s ease}
+.hero-visual:hover{transform:rotate(0deg)}
+.visual-title{font-size:1.3rem;font-weight:700;text-align:center;margin-bottom:2rem;color:#e67e22}
+.portion-demo{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:2rem}
+.portion-item{text-align:center;padding:1rem;background:#fef9e7;border-radius:15px;border:2px solid #f4d03f}
+.portion-icon{font-size:2.5rem;margin-bottom:0.5rem;display:block}
+.portion-label{font-weight:600;font-size:0.9rem;color:#d35400}
+
+@keyframes wave{0%,100%{transform:translateX(0)}50%{transform:translateX(-25%)}}
+
+/* MAGAZINE LAYOUT CONTENT */
+.magazine-main{background:#f8f4e6;padding:4rem 0}
+.magazine-container{max-width:1200px;margin:0 auto;padding:0 2rem}
+
+/* ARTICLE HEADER */
+.article-header{text-align:center;margin-bottom:5rem}
+.article-category{display:inline-block;background:#e67e22;color:white;padding:0.5rem 1.5rem;border-radius:20px;font-size:0.85rem;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:1rem}
+.article-title{font-size:3rem;font-weight:900;margin-bottom:1rem;color:#2d2d2d;line-height:1.1}
+.article-lead{font-size:1.2rem;color:#666;max-width:700px;margin:0 auto 2rem;line-height:1.7}
+.article-stats{display:flex;justify-content:center;gap:2rem;font-size:0.9rem;color:#999}
+
+/* PROBLEM SOLUTION LAYOUT */
+.problem-solution{display:grid;grid-template-columns:1fr 1fr;gap:4rem;margin-bottom:5rem}
+.problem-side,.solution-side{background:white;border-radius:25px;padding:3rem;box-shadow:0 15px 40px rgba(0,0,0,0.08);position:relative}
+.problem-side::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,#e74c3c,#c0392b);border-radius:25px 25px 0 0}
+.solution-side::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,#27ae60,#2ecc71);border-radius:25px 25px 0 0}
+.side-icon{font-size:4rem;margin-bottom:1.5rem;display:block}
+.side-title{font-size:2rem;font-weight:800;margin-bottom:1.5rem;color:#2d2d2d}
+.side-content{font-size:1rem;line-height:1.7;color:#555}
+
+/* STRATEGY CARDS */
+.strategies-section{margin:5rem 0}
+.strategies-title{font-size:2.5rem;font-weight:800;text-align:center;margin-bottom:1rem;color:#e67e22}
+.strategies-subtitle{text-align:center;font-size:1.1rem;color:#666;margin-bottom:3rem;max-width:600px;margin-left:auto;margin-right:auto}
+.strategies-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.strategy-card{background:white;border-radius:20px;padding:2.5rem;text-align:center;transition:all 0.4s ease;position:relative;overflow:hidden}
+.strategy-card::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(135deg,transparent 0%,rgba(244,208,63,0.1) 100%);opacity:0;transition:opacity 0.3s ease}
+.strategy-card:hover{transform:translateY(-10px);box-shadow:0 25px 50px rgba(0,0,0,0.15)}
+.strategy-card:hover::before{opacity:1}
+.strategy-number{position:absolute;top:-15px;right:20px;width:40px;height:40px;background:#e67e22;color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.1rem}
+.strategy-icon{font-size:3.5rem;margin-bottom:1.5rem;display:block}
+.strategy-title{font-size:1.3rem;font-weight:700;margin-bottom:1rem;color:#2d2d2d}
+.strategy-description{color:#666;line-height:1.6;font-size:0.95rem}
+
+/* HIGHLIGHT CALLOUT */
+.highlight-callout{background:linear-gradient(135deg,#f39c12,#e67e22);color:white;padding:4rem 3rem;margin:5rem 0;border-radius:30px;text-align:center;position:relative;overflow:hidden}
+.highlight-callout::before{content:'🍽️';position:absolute;top:20px;left:30px;font-size:8rem;opacity:0.1}
+.highlight-callout::after{content:'🥗';position:absolute;bottom:20px;right:30px;font-size:6rem;opacity:0.1}
+.highlight-content{max-width:800px;margin:0 auto;position:relative;z-index:2}
+.highlight-title{font-size:2.2rem;font-weight:800;margin-bottom:1.5rem}
+.highlight-text{font-size:1.1rem;line-height:1.7}
+
+/* TIPS MASONRY */
+.tips-section{margin:5rem 0}
+.tips-title{font-size:2.5rem;font-weight:800;text-align:center;margin-bottom:3rem;color:#2d2d2d}
+.tips-masonry{columns:3;column-gap:2rem}
+.tip-item{break-inside:avoid;margin-bottom:2rem;background:white;border-radius:20px;padding:2rem;box-shadow:0 10px 30px rgba(0,0,0,0.08);border-top:4px solid;position:relative}
+.tip-item:nth-child(3n+1){border-top-color:#e67e22}
+.tip-item:nth-child(3n+2){border-top-color:#f39c12}
+.tip-item:nth-child(3n+3){border-top-color:#d35400}
+.tip-icon{font-size:2.5rem;margin-bottom:1rem;display:block}
+.tip-title{font-size:1.2rem;font-weight:700;margin-bottom:1rem;color:#2d2d2d}
+.tip-text{color:#666;line-height:1.6;font-size:0.95rem}
+
+/* FOOTER */
+.organic-footer{background:linear-gradient(135deg,#d35400,#e67e22);color:white;text-align:center;padding:3rem 2rem;margin-top:5rem}
+.footer-content{max-width:600px;margin:0 auto}
+.footer-text{font-size:1rem;opacity:0.9}
+
+@media(max-width:768px){
+.hero-grid{grid-template-columns:1fr;gap:2rem}
+.hero-visual{transform:none}
+.problem-solution{grid-template-columns:1fr}
+.strategies-grid{grid-template-columns:1fr}
+.tips-masonry{columns:1}
+.article-stats{flex-direction:column;align-items:center;gap:0.5rem}
+}
+</style>
+</head>
+<body>
+
+<div class="organic-hero">
+  <div class="wave-layer">
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+  
+  <div class="hero-content">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <div class="hero-badge">Portion Control Mastery</div>
+        <h1 class="hero-title">How To Control Overeating At Restaurants</h1>
+        <p class="hero-subtitle">Transform your dining experience with proven strategies that help you enjoy delicious meals while maintaining healthy portion sizes and avoiding that uncomfortable stuffed feeling.</p>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="visual-title">Smart Portion Guide</div>
+        <div class="portion-demo">
+          <div class="portion-item">
+            <span class="portion-icon">👋</span>
+            <div class="portion-label">Palm = Protein</div>
+          </div>
+          <div class="portion-item">
+            <span class="portion-icon">✊</span>
+            <div class="portion-label">Fist = Vegetables</div>
+          </div>
+          <div class="portion-item">
+            <span class="portion-icon">👍</span>
+            <div class="portion-label">Thumb = Fats</div>
+          </div>
+          <div class="portion-item">
+            <span class="portion-icon">🥄</span>
+            <div class="portion-label">Cupped Hand = Carbs</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main class="magazine-main">
+  <div class="magazine-container">
+    
+    <div class="article-header">
+      <div class="article-category">Healthy Dining</div>
+      <h2 class="article-title">Master Restaurant Portion Control</h2>
+      <p class="article-lead">Restaurant portions have grown dramatically over the past decades, but you can take control with simple, practical strategies that work in any dining situation.</p>
+      <div class="article-stats">
+        <span>📖 5 min read</span>
+        <span>💡 Practical tips</span>
+        <span>🍽️ Dining guide</span>
+      </div>
+    </div>
+
+    <div class="problem-solution">
+      <div class="problem-side">
+        <span class="side-icon">⚠️</span>
+        <h3 class="side-title">The Overeating Problem</h3>
+        <div class="side-content">
+          <p>Restaurant portions are typically 2-4 times larger than recommended serving sizes. The average restaurant entrée contains 1,200+ calories, and unlimited bread, large drink sizes, and social pressure to "clean your plate" compound the problem.</p>
+          
+          <p>When we're in social settings, distracted by conversation, and faced with delicious food, our natural satiety signals often get overridden, leading to discomfort and regret after meals.</p>
+        </div>
+      </div>
+      
+      <div class="solution-side">
+        <span class="side-icon">✅</span>
+        <h3 class="side-title">Smart Solutions</h3>
+        <div class="side-content">
+          <p>The key is planning ahead and using proven psychological strategies to eat more mindfully. By pre-deciding your approach and using visual cues for appropriate portions, you can enjoy restaurant meals without overindulging.</p>
+          
+          <p>Focus on creating positive associations with leaving food on your plate, eating slowly, and prioritizing the social experience over just the food consumption.</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="strategies-section">
+      <h2 class="strategies-title">6 Proven Control Strategies</h2>
+      <p class="strategies-subtitle">Implement these research-backed techniques to maintain portion control while still thoroughly enjoying your dining experience</p>
+      
+      <div class="strategies-grid">
+        <div class="strategy-card">
+          <div class="strategy-number">1</div>
+          <span class="strategy-icon">📦</span>
+          <h3 class="strategy-title">Box It Immediately</h3>
+          <p class="strategy-description">Ask for a to-go container when your meal arrives and immediately portion half away. This removes temptation and gives you a second meal for later.</p>
+        </div>
+        
+        <div class="strategy-card">
+          <div class="strategy-number">2</div>
+          <span class="strategy-icon">🤝</span>
+          <h3 class="strategy-title">Share Strategically</h3>
+          <p class="strategy-description">Order one or two entrées for the table and share family-style. Add extra vegetables or salads to ensure everyone gets adequate nutrition and variety.</p>
+        </div>
+        
+        <div class="strategy-card">
+          <div class="strategy-number">3</div>
+          <span class="strategy-icon">⏰</span>
+          <h3 class="strategy-title">Eat Slowly</h3>
+          <p class="strategy-description">Put your fork down between bites, chew thoroughly, and engage in conversation. It takes 20 minutes for satiety signals to reach your brain.</p>
+        </div>
+        
+        <div class="strategy-card">
+          <div class="strategy-number">4</div>
+          <span class="strategy-icon">🥗</span>
+          <h3 class="strategy-title">Start with Vegetables</h3>
+          <p class="strategy-description">Begin your meal with a salad or vegetable appetizer. The fiber will help you feel satisfied with smaller portions of the main course.</p>
+        </div>
+        
+        <div class="strategy-card">
+          <div class="strategy-number">5</div>
+          <span class="strategy-icon">💧</span>
+          <h3 class="strategy-title">Hydrate First</h3>
+          <p class="strategy-description">Drink a full glass of water before and during your meal. Sometimes thirst masquerades as hunger, and proper hydration aids digestion.</p>
+        </div>
+        
+        <div class="strategy-card">
+          <div class="strategy-number">6</div>
+          <span class="strategy-icon">🎯</span>
+          <h3 class="strategy-title">Use Visual Cues</h3>
+          <p class="strategy-description">Use your hand as a portion guide: palm-sized protein, fist-sized vegetables, thumb-sized fats, and cupped-hand-sized starches.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="highlight-callout">
+      <div class="highlight-content">
+        <h2 class="highlight-title">Plan with Purpose</h2>
+        <p class="highlight-text">Big portions and endless refills make it easy to eat more than you need when you sit down with friends. You can use a <a href="https://daveshotchicknmenu.com/daves-hot-chicken-allergen-menu/" style="color:white;text-decoration:underline;">Hot Chicken Catering Menu</a> as a guide to pre-plan shared plates and sensible portion sizes so everyone enjoys the meal without feeling overstuffed.</p>
+      </div>
+    </div>
+
+    <section class="tips-section">
+      <h2 class="tips-title">Additional Success Tips</h2>
+      
+      <div class="tips-masonry">
+        <div class="tip-item">
+          <span class="tip-icon">🍞</span>
+          <h3 class="tip-title">Manage Bread Temptation</h3>
+          <p class="tip-text">Ask your server to bring bread with the meal instead of before, or request it be removed entirely if you're trying to avoid it. Out of sight, out of mind works remarkably well.</p>
+        </div>
+        
+        <div class="tip-item">
+          <span class="tip-icon">📱</span>
+          <h3 class="tip-title">Use Technology</h3>
+          <p class="tip-text">Apps like MyFitnessPal can help you estimate calories before ordering. Many chain restaurants provide detailed nutritional information that can guide your choices.</p>
+        </div>
+        
+        <div class="tip-item">
+          <span class="tip-icon">🎨</span>
+          <h3 class="tip-title">Choose Smaller Plates</h3>
+          <p class="tip-text">If dining buffet-style, opt for salad plates instead of dinner plates. The smaller surface area naturally limits portion sizes while still allowing variety.</p>
+        </div>
+        
+        <div class="tip-item">
+          <span class="tip-icon">🗣️</span>
+          <h3 class="tip-title">Communicate Your Intentions</h3>
+          <p class="tip-text">Let your dining companions know your goals. Social support makes a huge difference, and others often appreciate having someone model healthy behaviors.</p>
+        </div>
+        
+        <div class="tip-item">
+          <span class="tip-icon">🎭</span>
+          <h3 class="tip-title">Focus on the Experience</h3>
+          <p class="tip-text">Remember that dining out is about more than just food. Focus on conversation, ambiance, and connection rather than making food the sole center of attention.</p>
+        </div>
+        
+        <div class="tip-item">
+          <span class="tip-icon">⭐</span>
+          <h3 class="tip-title">Quality Over Quantity</h3>
+          <p class="tip-text">Choose restaurants known for high-quality ingredients and preparation. When food tastes better, you tend to eat more slowly and feel satisfied with smaller amounts.</p>
+        </div>
+        
+        <div class="tip-item">
+          <span class="tip-icon">🏠</span>
+          <h3 class="tip-title">Don't Skip Meals</h3>
+          <p class="tip-text">Avoid arriving at restaurants overly hungry. Have a small, protein-rich snack 2-3 hours before dining to prevent making impulsive, quantity-focused decisions.</p>
+        </div>
+        
+        <div class="tip-item">
+          <span class="tip-icon">🧘</span>
+          <h3 class="tip-title">Practice Mindful Eating</h3>
+          <p class="tip-text">Take a moment to appreciate the colors, aromas, and textures of your food. Mindful awareness enhances satisfaction and helps you recognize fullness cues more effectively.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="organic-footer">
+  <div class="footer-content">
+    <p class="footer-text">© 2026 Restaurant Portion Control Guide — Helping you enjoy dining out while maintaining healthy habits and feeling great</p>
+  </div>
+</footer>
+
+</body>
+</html>
